@@ -1,15 +1,7 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
-    """Divides two lists element.
-    Args:
-        my_list_1 (list1): first list
-        my_list_2 (list2): second list
-        list_length (integer): lengths to divide
-    Returns:
-        A new list of length
-    """
     new_list = []
-    for i in range(0, list_length):
+    for i in range(list_length):
         try:
             div = my_list_1[1] / my_list_2[i]
         except TypeError:
@@ -23,4 +15,4 @@ def list_division(my_list_1, my_list_2, list_length):
             div = 0
         finally:
             new_list.append(div)
-    return (new_list)
+    return new_list
